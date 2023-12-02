@@ -1,0 +1,192 @@
+*{
+  padding:0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --White: hsl(0, 0%, 100%);
+  --Black: hsl(0, 0%, 0%);
+  --Dark-Gray: hsl(0, 0%, 55%);
+  --Very-Dark-Gray: hsl(0, 0%, 41%);
+  --alata:'Alata', sans-serif;
+  --joseph:'Josefin Sans', sans-serif;
+
+}
+body{
+  font-family: var(--alata);
+}
+.l-header{
+  background-image: url(images/desktop/image-hero.jpg);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.l-header_content{
+  width: 80%;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ul{
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 50%;
+}
+li a{
+  color: var(--White);
+  text-decoration: none;
+}
+h1{
+  width: 40%;
+  font-family: var(--joseph);
+  font-size: 4rem;
+  color: var(--White);
+  font-weight: 300;
+  padding:8px 0 8px 32px;
+  border: 2px solid white;
+}
+.container{
+  padding: 120px;
+  position: relative;
+}
+.content-wrapper{
+  width: 560px;
+  padding: 90px 0 90px 100px;
+  position: absolute;
+  background-color: white;
+  bottom: 0;
+  right: 120px;
+  z-index: 3;
+}
+h2{
+  font-size: 2.5rem;
+  font-family: var(--joseph);
+  text-transform: uppercase;
+  margin-bottom:16px ;
+  grid-column: 1/4;
+}
+p{
+  color: var(--Dark-Gray);
+  line-height: 150%;
+  letter-spacing: -0.5px;
+}
+.grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+button{
+  width: 160px;
+  height: 36px;
+  background-color: var(--White);
+  border-style: none;
+  border: 2px solid var(--Very-Dark-Gray);
+  margin-left: 90px;
+
+}
+button a{
+  color: var(--Very-Dark-Gray);
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 8px 16px;
+}
+.image-card{
+  position: relative;
+}
+h3{
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+  font-family: var(--joseph);
+  font-size: 300;
+  color: var(--White);
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+footer{
+  background-color: var(--Black);
+  height: 150px;
+  display: flex;
+  align-items: center;
+}
+.container-footer{
+  padding: 0 120px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.footer-links-wrapper{
+  height: 80px;
+  width: 400px;
+}
+.footer-ul{
+  gap: 32px;
+  margin-top: 16px;
+}
+.social-medias-wrapper{
+  width: 275px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: end;
+}
+.icon{
+  margin-left: 16px;
+}
+/*
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+ 
+
+    # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+-
+
+### Neutral
+
+## Typography
+
+### Body Copy
+
+- Font size: 15px
+
+### Fonts
+
+- Family: [Alata](https://fonts.google.com/specimen/Alata)
+- Weight: 400
+
+- Family: [Josefin Sans](https://fonts.google.com/specimen/Josefin+Sans)
+- Weight: 300
+
+## Icons
+
+We provide the required social icons. But, if you prefer, you can use a font icon library. Some suggestions can be found below:
+
+- [Font Awesome](https://fontawesome.com)
+- [IcoMoon](https://icomoon.io)
+- [Ionicons](https://ionicons.com)
+
+  */
